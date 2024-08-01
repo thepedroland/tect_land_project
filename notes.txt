@@ -1,0 +1,75 @@
+#####################################
+# Notes 11am Thurs 1 Aug
+#####################################
+## Purpose: Brainstorm on Topic
+## Aims: Have keywords and objectives of what we want to achieve
+
+########
+## Initial brainstorm
+#######
+* Difference between hex and raster?
+* Real DEM using OpenTopography
+* Synthetic examples where parameters change
+* Use synthetic results to guide/compare to observed landscape results
+
+
+#######
+## Revised brainstorm
+#######
+--> Groups to split in two, divided by observed & synthetic landscapes
+1. Observed Landscape (DEM): Anthony, Madison, Cho, Vivian
+2. Synthetic Landscape: Aysan, Pedro, Matthew
+
+#######
+## Mentor comments
+#######
+* It is OK to write your own functions as basic components (e.g. single equations)
+* It is too much to implement PDE's
+
+#######
+## Final Project Idea
+#######
+* Compare the impact of changing parameters on a landscape
+* Response time to Perturbations in LEM comparing to DEM data: Study case: Teton Fault - Wyoming
+
+### Parts for Notebook:
+1- Objective with notebook
+2- Geological context, K values, Uplift values, seismic recurrence of fault activity. 
+3 - Methods: Concepts used to do the analysis 
+- Brief theory of Chi
+- Brief theory of Longitudinal Profiles
+4 - Running the experiments with DEMs
+5 - Running the experiments with synthetic data
+6 - Comparing results
+7 - Conclusion
+
+
+### Components Required
+* StreamPowerEroder
+* FlowAccumulator
+* LinearDiffuser
+* Normal Fault
+* ChiFinder
+* ChannelProfiler
+* SinkFiller?
+
+
+### Tasks
+* Decide on a DEM area: Teton Normal Fault
+* Extract a DEM
+* Decide on which parameters are going to change: Erodibility, Fracture Density
+* Decide which metrics are going to be looked at: Long profiles, Chi, Morphometric parameters
+* Produce a short introduction to key theory/literature:
+    * Teton normal fault
+    * Stream power model
+    * Chi
+    
+
+
+####################################
+* Aims by post-lunch session: Think about how we want to implement our plan
+* Aims by end of day: Draft workplan with responsibilities. Who is doing what?
+
+* Things to think about
+    * What do we want to teach people?
+    * What works well from other Lab examples?
