@@ -16,7 +16,7 @@ class FieldWork:
         
         return dip_mean
 
-    def calculate_grid_size(self,w,l,dx):
+    def calculate_grid_size(self,x_size,y_size,dx,dy):
 
         self.w = w
         self.l = l
