@@ -13,6 +13,8 @@ class FieldWork:
 
         print(f"The average strike is {strike_mean}")
         print(f"The average dip is {dip_mean}")
+        
+        return dip_mean
 
     def calculate_grid_size(self,w,l,dx):
 
