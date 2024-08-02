@@ -1,13 +1,12 @@
 import numpy as np
 
+
 class FieldWork:
 
-    def __init__(self,data):
-
+    def __init__(self, data):
         self.data = data
 
     def calculate_dip_strike(self):
-
         dip_mean = np.mean(self.data["dip"])
         strike_mean = np.mean(self.data["strike"])
 
@@ -16,18 +15,19 @@ class FieldWork:
         
         return dip_mean
 
-    def calculate_grid_size(self,x_size,y_size,dx,dy):
-
-        self.w = w
-        self.l = l
+    def calculate_grid_size(self, x_size, y_size, dx, dy):
+        self.x_size = x_size
+        self.y_size = y_size
         self.dx = dx
+        self.dy = dy
 
-        rows = l/dx
-        col = w/dx
+        self.rows = self.y_size / self.dy
+        self.col = self.x_size / self.dx
 
-        print(f"Your area have {w}x{l}, the grid has {rows} rows and {col} columns")
+        print(f"Your area has {self.x_size} km x {self.y_size} km, the grid has {self.rows} rows and {self.col} columns")
         
-        return rows, col
+        return self.rows, self.col
+
 
 
 
