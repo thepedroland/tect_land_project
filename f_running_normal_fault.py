@@ -1,7 +1,6 @@
 import os
 
 def running_normal_fault(basin,uplift_rate,dip_angle,bottom_xy_coord,top_xy_coord,n_steps,dt,scenario):
-    
     folder_name = f'model_fault_scenario_{scenario}'
     os.makedirs(folder_name, exist_ok=True)
     
