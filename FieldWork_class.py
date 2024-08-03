@@ -27,7 +27,7 @@ class FieldWork:
         
         return self.rows, self.col
     
-    def calculate_top_xy_coordinate(self, grid,x_bottom, y_bottom, angle_degrees):
+    def calculate_topxy(self, grid,x_bottom, y_bottom, angle_degrees):
         
         self.grid_size = (grid.shape[1], grid.shape[0])  # (x_max, y_max)
         angle_radians = np.radians(angle_degrees)
