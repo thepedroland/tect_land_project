@@ -1,6 +1,10 @@
 import os
+from landlab.components import NormalFault
+from landlab import RasterModelGrid, imshow_grid
+import matplotlib.pyplot as plt 
+import numpy as np 
 
-def running_normal_fault(basin,uplift_rate,dip_angle,bottom_xy_coord,top_xy_coord,n_steps,dt,scenario):
+def running_normal_fault(basin_fault_mg,uplift_rates,dip_angle,bottom_xy_coord,top_xy_coord,n_steps,dt,scenario,fa,ld,sp):
     folder_name = f'model_fault_scenario_{scenario}'
     os.makedirs(folder_name, exist_ok=True)
     
@@ -20,7 +24,8 @@ def running_normal_fault(basin,uplift_rate,dip_angle,bottom_xy_coord,top_xy_coor
                 "include_boundaries": True,
             }
 
-
+    nf= NormalFault(basin_fault_mg,**params_fault)
+    
     for i in range(n_steps):
 
         fa.run_one_step()

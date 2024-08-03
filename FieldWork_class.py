@@ -1,6 +1,5 @@
 import numpy as np
 
-
 class FieldWork:
 
     def __init__(self, data):
@@ -28,6 +27,7 @@ class FieldWork:
         
         return self.rows, self.col
 
+    
 
 
 
